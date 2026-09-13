@@ -1,4 +1,4 @@
-package io.github.ykysnk.io.github.ykysnk.translationGenerator
+package io.github.ykysnk.translationGenerator
 
 import org.gradle.api.Plugin
 import org.gradle.api.Project

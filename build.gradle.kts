@@ -28,7 +28,7 @@ gradlePlugin {
     plugins {
         create("translationGenerator") {
             id = "io.github.ykysnk.translation-generator"
-            implementationClass = "io.github.ykysnk.translationgenerator.TranslationGeneratorPlugin"
+            implementationClass = "io.github.ykysnk.translationGenerator.TranslationGeneratorPlugin"
             displayName = "Translation Generator"
             description = "Generate translation resources"
         }

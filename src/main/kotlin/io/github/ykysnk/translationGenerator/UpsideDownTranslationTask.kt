@@ -1,15 +1,14 @@
-package io.github.ykysnk.io.github.ykysnk.translationGenerator
+package io.github.ykysnk.translationGenerator
 
 import groovy.json.JsonSlurper
 import org.gradle.api.DefaultTask
 import org.gradle.api.file.DirectoryProperty
 import org.gradle.api.file.RegularFileProperty
 import org.gradle.api.provider.Property
-import org.gradle.api.tasks.Input
-import org.gradle.api.tasks.InputFile
-import org.gradle.api.tasks.OutputDirectory
-import org.gradle.api.tasks.TaskAction
+import org.gradle.api.tasks.*
+import org.gradle.work.DisableCachingByDefault
 
+@DisableCachingByDefault(because = "Translation files are cheap to generate.")
 abstract class UpsideDownTranslationTask : DefaultTask() {
     @get:Input
     abstract val modId: Property<String>
@@ -17,6 +16,7 @@ abstract class UpsideDownTranslationTask : DefaultTask() {
     @get:Input
     abstract val langDirectory: Property<String>
 
+    @get:PathSensitive(PathSensitivity.RELATIVE)
     @get:InputFile
     abstract val inputFile: RegularFileProperty
 

@@ -16,6 +16,9 @@ abstract class FallbackTranslationsTask : DefaultTask() {
     @get:Input
     abstract val langDirectory: Property<String>
 
+    @get:Input
+    abstract val packageName: Property<String>
+
     @get:PathSensitive(PathSensitivity.RELATIVE)
     @get:InputFile
     abstract val inputFile: RegularFileProperty
@@ -44,7 +47,7 @@ abstract class FallbackTranslationsTask : DefaultTask() {
     @TaskAction
     fun generate() {
         val translations = loadTranslations()
-        val packageName = project.group.toString() // TODO: May have issue
+        val packageName = packageName.getOrElse("io.github.ykysnk.generated")
 
         require(packageName.isNotBlank()) {
             "Gradle project group must not be empty."

@@ -11,6 +11,7 @@ class TranslationGeneratorPlugin : Plugin<Project> {
         project.tasks.register("generateFallbackTranslations", FallbackTranslationsTask::class.java) {
             it.modId.set(extension.modId)
             it.langDirectory.set(extension.langDirectory)
+            it.packageName.set(extension.packageName)
 
             it.group = "translation"
             it.description = "Generate fallback translations"

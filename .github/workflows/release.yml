@@ -172,7 +172,7 @@ jobs:
           name: maven-repository
           path: build/repo/
 
-      - name: Publish Maven repository
+      - name: Checkout to Maven repository
         shell: bash
         run: |
           git fetch origin maven:maven || true
@@ -184,18 +184,18 @@ jobs:
             git rm -rf . || true
             git clean -fdx
 
-            cat > index.html <<'EOF'
-            <!doctype html>
-            <html>
-            <head>
-                <meta charset="UTF-8">
-                <title>Maven Repository</title>
-            </head>
-            <body>
-                <h1>Maven Repository</h1>
-            </body>
-            </html>
-            EOF
+            printf '%s\n' \
+            '<!doctype html>' \
+            '<html>' \
+            '<head>' \
+            '    <meta charset="UTF-8">' \
+            '    <title>Maven Repository</title>' \
+            '</head>' \
+            '<body>' \
+            '    <h1>Maven Repository</h1>' \
+            '</body>' \
+            '</html>' \
+            > index.html
 
             git add index.html
             git commit -m "action: Initialize Maven repository"

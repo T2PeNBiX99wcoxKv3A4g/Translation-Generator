@@ -54,7 +54,7 @@ abstract class FallbackTranslationsTask : DefaultTask() {
 
         val output = buildString {
             appendLine("// Generated file. DO NOT EDIT.")
-            appendLine("// Generated from assets/${modId.get()}/lang/en_us.json")
+            appendLine("// Generated from en_us.json")
             appendLine()
             appendLine("package $packageName")
             appendLine()

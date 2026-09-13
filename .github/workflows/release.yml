@@ -15,6 +15,8 @@ jobs:
     name: Ubuntu Latest Build
     permissions:
       contents: write
+      pages: write
+      id-token: write
     strategy:
       matrix:
         java: [
@@ -159,6 +161,20 @@ jobs:
         with:
           name: Artifacts
           path: build/libs/
+
+      - name: Build Maven repository
+        run: ./gradlew publish
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v6
+
+      - name: Upload Pages Artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: build/repo
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v5
 
   upload:
     name: Create Release

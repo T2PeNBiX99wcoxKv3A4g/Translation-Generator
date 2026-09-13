@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.3](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.2..v0.0.3) - 2026-09-13
+
+### ⚙️ Miscellaneous Tasks
+
+- Add Pages deployment steps to release workflow - ([20760e3](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/20760e369e4594aac0a6edb85c7d616f8b4ac76f))
+- Configure Maven publishing to GitHub Pages - ([a8e300c](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/a8e300c983d73239f6da6edbd9b9b3a095039d8e))
+
+### Action
+
+- Update version in `gradle.properties` - ([5d59070](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/5d59070dfb10781d18dc7e614a08f174b7db1769))
+
+
 ## [0.0.2](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.1..v0.0.2) - 2026-09-13
 
 ### ⚙️ Miscellaneous Tasks

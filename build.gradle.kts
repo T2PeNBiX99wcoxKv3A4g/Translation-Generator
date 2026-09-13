@@ -34,3 +34,12 @@ gradlePlugin {
         }
     }
 }
+
+publishing {
+    repositories {
+        maven {
+            name = "GitHubPages"
+            url = layout.buildDirectory.dir("repo").get().asFile.toURI()
+        }
+    }
+}

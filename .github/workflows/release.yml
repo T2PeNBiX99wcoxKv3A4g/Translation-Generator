@@ -175,6 +175,7 @@ jobs:
       - name: Checkout to Maven repository
         shell: bash
         run: |
+          git reset --hard HEAD
           git fetch origin maven:maven || true
 
           if git show-ref --verify --quiet refs/heads/maven; then

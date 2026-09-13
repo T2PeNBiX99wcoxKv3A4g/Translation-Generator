@@ -6,6 +6,7 @@ on:
     branches-ignore:
       - "dev/**"
       - "dependabot/**"
+      - "maven"
     paths-ignore:
       - "README.md"
       - "LICENSE*"
@@ -129,7 +130,7 @@ jobs:
         run: git add .
 
       - name: Commit changed files
-        run: "git commit -m 'Action: Update version in `gradle.properties`'"
+        run: "git commit -m 'action: Update version in `gradle.properties`'"
 
       - name: Fetch updates
         run: git fetch origin ${{ github.ref_name }}
@@ -165,16 +166,56 @@ jobs:
       - name: Build Maven repository
         run: ./gradlew publish
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v6
-
-      - name: Upload Pages Artifact
-        uses: actions/upload-pages-artifact@v5
+      - name: Upload Maven Repository
+        uses: actions/upload-artifact@v7
         with:
-          path: build/repo
+          name: maven-repository
+          path: build/repo/
 
-      - name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v5
+      - name: Publish Maven repository
+        shell: bash
+        run: |
+          git fetch origin maven:maven || true
+
+          if git show-ref --verify --quiet refs/heads/maven; then
+            git checkout maven
+          else
+            git checkout --orphan maven
+            git rm -rf . || true
+            git clean -fdx
+
+            cat > index.html <<'EOF'
+            <!doctype html>
+            <html>
+            <head>
+                <meta charset="UTF-8">
+                <title>Maven Repository</title>
+            </head>
+            <body>
+                <h1>Maven Repository</h1>
+            </body>
+            </html>
+            EOF
+
+            git add index.html
+            git commit -m "action: Initialize Maven repository"
+          fi
+
+      - name: Download Maven Repository
+        uses: actions/download-artifact@v8
+        with:
+          name: maven-repository
+          path: .maven-repository
+
+      - name: Publish Maven repository
+        shell: bash
+        run: |
+          cp -R .maven-repository/. .
+          rm -rf .maven-repository
+
+          git add .
+          git commit -m "action: Publish ${{ steps.tag_version.outputs.new_tag }}" || exit 0
+          git push origin maven
 
   upload:
     name: Create Release

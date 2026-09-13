@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.7](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.6..v0.0.7) - 2026-09-13
+
+### ⚙️ Miscellaneous Tasks
+
+- Ensure clean Maven repository state in release workflow - ([27b2eee](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/27b2eee94524d37414832e4ea9f558781e28d2f2))
+
+### Action
+
+- Update version in `gradle.properties` - ([ad04339](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/ad043390d12354c73e50c4dcc5d0cd61d6927bf5))
+
+
 ## [0.0.6](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.5..v0.0.6) - 2026-09-13
 
 ### ⚙️ Miscellaneous Tasks

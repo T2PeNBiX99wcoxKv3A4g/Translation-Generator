@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.0.2](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.1..v0.0.2) - 2026-09-13
+
+### ⚙️ Miscellaneous Tasks
+
+- Add JitPack configuration file - ([7a53fa5](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/7a53fa5d8b9076f897075ecf5f7a45262cd75e13))
+
+### Action
+
+- Update version in `gradle.properties` - ([0e90dad](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/0e90dad711dba09442280175c00eda7f076f1198))
+
+## New Contributors ❤️
+
+* @github-actions[bot] made their first contribution
+
 ## [0.0.1] - 2026-09-13
 
 ### ⚙️ Miscellaneous Tasks

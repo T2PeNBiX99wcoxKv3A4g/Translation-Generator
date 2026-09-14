@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.24](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.23..v0.0.24) - 2026-09-14
+
+### ⚙️ Miscellaneous Tasks
+
+- Refine inputFile configurations and improve logging in translation tasks - ([0943108](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/0943108352dc116e5995086397f0c81cf19312fe))
+
+### Action
+
+- Update version in `gradle.properties` - ([c70cc6b](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/c70cc6be60b621ed484645c288036702d2a87609))
+
+
 ## [0.0.23](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.22..v0.0.23) - 2026-09-14
 
 ### ⚙️ Miscellaneous Tasks

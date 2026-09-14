@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.12](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.11..v0.0.12) - 2026-09-14
+
+### ⚙️ Miscellaneous Tasks
+
+- Add GH_TOKEN environment variable for Maven publishing in release workflow - ([860993b](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/860993bc6ff0a7505a5145b1d0c3090cd88d5bc9))
+
+### Action
+
+- Update version in `gradle.properties` - ([f61b31f](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/f61b31fef512f63cd8b7b3a2a4705b4dce62c75c))
+
+
 ## [0.0.11](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.10..v0.0.11) - 2026-09-14
 
 ### ⚙️ Miscellaneous Tasks

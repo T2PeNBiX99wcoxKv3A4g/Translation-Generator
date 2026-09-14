@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.23](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.22..v0.0.23) - 2026-09-14
+
+### ⚙️ Miscellaneous Tasks
+
+- Consolidate inputFile configuration in TranslationGeneratorPlugin - ([38460fb](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/38460fbe0bc2d0da2f025e644c575e41efbc6768))
+
+### Action
+
+- Update version in `gradle.properties` - ([dd22b31](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/dd22b3133b3e1d6f590c367d3f015ee51e47c30c))
+
+
 ## [0.0.22](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.21..v0.0.22) - 2026-09-14
 
 ### ⚙️ Miscellaneous Tasks

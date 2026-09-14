@@ -11,7 +11,8 @@ plugins {
 
 translationGenerator {
     modId.set("your_mod_id")
-    packageName.set("the_package_group_path") // Not the same as the Maven group, this is the package path used in the code.
+    // Not the same as the Maven group, this is the package path used in the code.
+    packageName.set("the_package_group_path")
 }
 ```
 
@@ -40,7 +41,8 @@ plugins {
 
 translationGenerator {
     modId = 'your_mod_id'
-    packageName = 'the_package_group_path' // Not the same as the Maven group, this is the package path used in the code.
+    // Not the same as the Maven group, this is the package path used in the code.
+    packageName = 'the_package_group_path'
 }
 ```
 

@@ -40,7 +40,12 @@ abstract class FallbackTranslationsTask : DefaultTask() {
         outputDirectory.convention(project.layout.buildDirectory.dir("generated/sources/fallbackTranslations"))
 
         onlyIf {
-            inputFile.get().asFile.exists()
+            val file = inputFile.get().asFile
+
+            logger.lifecycle("Fallback translation input: $file")
+            logger.lifecycle("Exists: ${file.exists()}")
+
+            file.exists()
         }
     }
 

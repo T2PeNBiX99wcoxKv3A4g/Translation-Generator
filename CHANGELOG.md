@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.9](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.8..v0.0.9) - 2026-09-14
+
+### ⚙️ Miscellaneous Tasks
+
+- Ensure thorough cleanup of Maven branch during initialization in release workflow - ([4a20601](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/4a206015f0defac0d8ec219e73159057ddd2d4b7))
+
+### Action
+
+- Update version in `gradle.properties` - ([331ce9e](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/331ce9e6315bc797cb7d2cc8c3777829e532b1dd))
+
+
 ## [0.0.8](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.7..v0.0.8) - 2026-09-14
 
 ### ⚙️ Miscellaneous Tasks

@@ -13,6 +13,14 @@ class TranslationGeneratorPlugin : Plugin<Project> {
             it.langDirectory.set(extension.langDirectory)
             it.packageName.set(extension.packageName)
 
+            it.inputFile.set(
+                extension.langDirectory.zip(extension.modId) { langDirectory, modId ->
+                    project.layout.projectDirectory.file(
+                        "$langDirectory/$modId/lang/en_us.json"
+                    )
+                }
+            )
+
             it.group = "translation"
             it.description = "Generate fallback translations"
         }

@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.25](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.24..v0.0.25) - 2026-09-14
+
+### ⚙️ Miscellaneous Tasks
+
+- Update release workflow to change version in README.md - ([867cc12](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/867cc12b932de4f72ef8e6b8d2547941b707c56f))
+- Add plugin usage examples to README.md - ([1402128](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/14021284465c0bed500c4407c737079d1f039ee4))
+
+### Action
+
+- Update version in `gradle.properties` - ([eee0127](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/eee012708b59289d32150de8f240d46fe296eea6))
+
+
 ## [0.0.24](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.23..v0.0.24) - 2026-09-14
 
 ### ⚙️ Miscellaneous Tasks

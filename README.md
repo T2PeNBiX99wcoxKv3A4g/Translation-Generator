@@ -21,7 +21,7 @@ pluginManagement {
     }
 
     plugins {
-        id("io.github.ykysnk.translation-generator") version "0.0.24"
+        id("io.github.ykysnk.translation-generator") version "0.0.25"
     }
 }
 ```
@@ -46,7 +46,7 @@ pluginManagement {
     }
 
     plugins {
-        id 'io.github.ykysnk.translation-generator' version '0.0.24'
+        id 'io.github.ykysnk.translation-generator' version '0.0.25'
     }
 }
 ```

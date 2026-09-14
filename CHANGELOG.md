@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.20](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.19..v0.0.20) - 2026-09-14
+
+### ⚙️ Miscellaneous Tasks
+
+- Log input file details in FallbackTranslationsTask - ([bbe979a](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/bbe979a66ddcc56c67fe94d5b4dfa13311795cae))
+
+### Action
+
+- Update version in `gradle.properties` - ([fd2d516](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/fd2d516da01fecee7d2ec795cc9f4a5bc4086601))
+
+
 ## [0.0.19](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.18..v0.0.19) - 2026-09-14
 
 ### ⚙️ Miscellaneous Tasks

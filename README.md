@@ -8,6 +8,11 @@ This is a Gradle plugin for generates translations for mod.
 plugins {
     id("io.github.ykysnk.translation-generator")
 }
+
+translationGenerator {
+    modId.set("your_mod_id")
+    packageName.set("the_package_group_path") // Not the same as the Maven group, this is the package path used in the code.
+}
 ```
 
 `settings.gradle.kts`
@@ -31,6 +36,11 @@ pluginManagement {
 ```groovy
 plugins {
     id 'io.github.ykysnk.translation-generator'
+}
+
+translationGenerator {
+    modId = 'your_mod_id'
+    packageName = 'the_package_group_path' // Not the same as the Maven group, this is the package path used in the code.
 }
 ```
 

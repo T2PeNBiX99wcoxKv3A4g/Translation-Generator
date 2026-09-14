@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.15](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.14..v0.0.15) - 2026-09-14
+
+### Action
+
+- Update version in `gradle.properties` - ([bc1b220](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/bc1b220cc0eda72fa874f11d61fa917909ce0cf2))
+
+
 ## [0.0.14](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.13..v0.0.14) - 2026-09-14
 
 ### Action

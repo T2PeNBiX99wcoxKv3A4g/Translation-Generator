@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.18](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.17..v0.0.18) - 2026-09-14
+
+### ⚙️ Miscellaneous Tasks
+
+- Add GitHub Pages deployment steps to release workflow - ([ffd417f](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/ffd417fa611bb8722a19522d78f93738a27166cd))
+
+### Action
+
+- Update version in `gradle.properties` - ([ce9c0e5](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/ce9c0e5b3ac473eeb0db999f0b25580591b57c15))
+
+
 ## [0.0.17](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.16..v0.0.17) - 2026-09-14
 
 ### Action

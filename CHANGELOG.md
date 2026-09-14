@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.10](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.9..v0.0.10) - 2026-09-14
+
+### ⚙️ Miscellaneous Tasks
+
+- Adjust Maven repository initialization to use temporary directory for cloning - ([82884af](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/82884afa40e88f5c4fe72747665146d7f8eaf93d))
+
+### Action
+
+- Update version in `gradle.properties` - ([9c20cbe](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/9c20cbeaed80c3decc62e174fe5c7e9f41d51b20))
+
+
 ## [0.0.9](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.8..v0.0.9) - 2026-09-14
 
 ### ⚙️ Miscellaneous Tasks

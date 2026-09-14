@@ -183,21 +183,8 @@ jobs:
           else
             git checkout --orphan maven
             rm -rf .
-
-            printf '%s\n' \
-            '<!doctype html>' \
-            '<html>' \
-            '<head>' \
-            '    <meta charset="UTF-8">' \
-            '    <title>Maven Repository</title>' \
-            '</head>' \
-            '<body>' \
-            '    <h1>Maven Repository</h1>' \
-            '</body>' \
-            '</html>' \
-            > index.html
-
-            git add index.html
+            git clone https://github.com/T2PeNBiX99wcoxKv3A4g/Maven-Template.git .
+            git add .
             git commit -m "action: Initialize Maven repository"
           fi
 

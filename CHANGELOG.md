@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.0.8](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.7..v0.0.8) - 2026-09-14
+
+### ⚙️ Miscellaneous Tasks
+
+- Remove Maven workflow and use external template for repository initialization - ([ef49086](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/ef49086955b058aa9ef97bbd27381cbeea3ca47d))
+- Update .gitignore - ([6bf132d](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/6bf132d9870429c4e8d271ad9fb7e8b838659bec))
+- Simplify Maven branch cleanup in release workflow - ([0c15aa1](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/0c15aa1b2f17013cae396b9ab53c7846bc6e1ab7))
+
+### Action
+
+- Update version in `gradle.properties` - ([834304b](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/834304bdeb6c802dcb1a40b8358b72090d015042))
+
+
 ## [0.0.7](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.6..v0.0.7) - 2026-09-13
 
 ### ⚙️ Miscellaneous Tasks

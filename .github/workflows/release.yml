@@ -99,6 +99,9 @@ jobs:
         id: change_version
         run: python .scripts/change_version.py change-version ./gradle.properties version ${{ steps.tag_version.outputs.new_tag }}
 
+      - name: Change version in `README.md`
+        run: python .scripts/change_version.py replace-version ./README.md
+
       - name: Remove `.scripts`
         run: rm -rf .scripts
 

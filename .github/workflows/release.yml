@@ -184,10 +184,8 @@ jobs:
             git checkout --orphan maven
             git rm -rf . || true
             git clean -fdx
-            git clone https://github.com/T2PeNBiX99wcoxKv3A4g/Maven-Template.git /tmp/maven-template
-            cp -R /tmp/maven-template/. .
-            rm -rf /tmp/maven-template
-            git add .
+            curl -L https://github.com/T2PeNBiX99wcoxKv3A4g/Maven-Template/archive/refs/heads/master.tar.gz | tar -xz --strip-components=1
+            git add -A
             git commit -m "action: Initialize Maven repository"
           fi
 

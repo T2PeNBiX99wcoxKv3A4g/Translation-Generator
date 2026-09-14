@@ -176,7 +176,8 @@ jobs:
         shell: bash
         run: |
           git fetch origin
-          git reset --hard origin/$(git branch --show-current)
+          git reset --hard
+          git clean -fdx
           git fetch origin maven:maven || true
 
           if git show-ref --verify --quiet refs/heads/maven; then

@@ -31,11 +31,11 @@ abstract class FallbackTranslationsTask : DefaultTask() {
 
         onlyIf {
             val file = inputFile.get().asFile
+            val exists = file.exists()
 
-            logger.lifecycle("Fallback translation input: $file")
-            logger.lifecycle("Exists: ${file.exists()}")
-
-            file.exists()
+            if (!exists)
+                logger.warn("Input file are not exists: $file")
+            exists
         }
     }
 

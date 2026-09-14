@@ -24,16 +24,6 @@ abstract class UpsideDownTranslationTask : DefaultTask() {
     abstract val outputDirectory: DirectoryProperty
 
     init {
-        inputFile.convention(
-            project.layout.projectDirectory.file(
-                "${langDirectory.getOrElse("src/main/resources/assets")}/${
-                    modId.getOrElse(
-                        "null"
-                    )
-                }/lang/en_us.json"
-            )
-        )
-
         outputDirectory.convention(
             project.layout.buildDirectory.dir(
                 "generated/resources/upsideDownTranslations"
@@ -41,7 +31,12 @@ abstract class UpsideDownTranslationTask : DefaultTask() {
         )
 
         onlyIf {
-            inputFile.get().asFile.exists()
+            val file = inputFile.get().asFile
+            val exists = file.exists()
+
+            if (!exists)
+                logger.warn("Input file are not exists: $file")
+            exists
         }
     }
 

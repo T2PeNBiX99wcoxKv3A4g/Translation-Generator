@@ -197,6 +197,8 @@ jobs:
 
       - name: Publish Maven repository
         shell: bash
+        env:
+          GH_TOKEN: ${{ secrets.FUCK }}
         run: |
           cp -R .maven-repository/. .
           rm -rf .maven-repository

@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.13](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.12..v0.0.13) - 2026-09-14
+
+### ⚙️ Miscellaneous Tasks
+
+- Update token usage in release workflow - ([d81bd49](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/d81bd49aa5cc97b5cbacfdd7c3191a4858bcc21b))
+
+### Action
+
+- Update version in `gradle.properties` - ([794b575](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/794b57526bd2a6b8ac33c6dcf93e8570cf9ee9bb))
+
+
 ## [0.0.12](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.11..v0.0.12) - 2026-09-14
 
 ### ⚙️ Miscellaneous Tasks

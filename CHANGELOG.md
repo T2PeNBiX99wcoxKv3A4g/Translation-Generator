@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.22](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.21..v0.0.22) - 2026-09-14
+
+### ⚙️ Miscellaneous Tasks
+
+- Ensure clean working directory during release workflow - ([b97b5e4](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/b97b5e403d580f68e8a03829483a793eed24dc70))
+
+### Action
+
+- Update version in `gradle.properties` - ([1023f7d](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/1023f7d521f17648f8194a63a95e880c48b39209))
+
+
 ## [0.0.21](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.20..v0.0.21) - 2026-09-14
 
 ### ⚙️ Miscellaneous Tasks

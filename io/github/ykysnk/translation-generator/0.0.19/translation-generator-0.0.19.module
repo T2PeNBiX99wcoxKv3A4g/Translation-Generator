@@ -1,0 +1,82 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.github.ykysnk",
+    "module": "translation-generator",
+    "version": "0.0.19",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.7.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "apiElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "translation-generator-0.0.19.jar",
+          "url": "translation-generator-0.0.19.jar",
+          "size": 19144,
+          "sha512": "a4ccd331dbf83d33390f1479202270267cb270119533606966480b9836663112be2a541b9f1b6492b62a3b0e64b9fc8233bd4c1c258be096f291c63ca09b2bca",
+          "sha256": "f927d090277c4be55351c806a278de219be80e3804e89b83f9c633820c8b1bab",
+          "sha1": "f6be5d214d63f409b995ae12a04a740b3b39bc0d",
+          "md5": "9a521dbedd973b11575d49ac15bfb351"
+        }
+      ]
+    },
+    {
+      "name": "runtimeElements",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.jvm.version": 25,
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.4.20"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "translation-generator-0.0.19.jar",
+          "url": "translation-generator-0.0.19.jar",
+          "size": 19144,
+          "sha512": "a4ccd331dbf83d33390f1479202270267cb270119533606966480b9836663112be2a541b9f1b6492b62a3b0e64b9fc8233bd4c1c258be096f291c63ca09b2bca",
+          "sha256": "f927d090277c4be55351c806a278de219be80e3804e89b83f9c633820c8b1bab",
+          "sha1": "f6be5d214d63f409b995ae12a04a740b3b39bc0d",
+          "md5": "9a521dbedd973b11575d49ac15bfb351"
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.19](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.18..v0.0.19) - 2026-09-14
+
+### ⚙️ Miscellaneous Tasks
+
+- Update group ID in gradle.properties - ([c5727ca](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/c5727cae36e629406b80a3762a4dc2565401f2ba))
+
+### Action
+
+- Update version in `gradle.properties` - ([3f05337](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/3f05337bf465b34bc57e3e175dd12fe9000373cd))
+
+
 ## [0.0.18](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.17..v0.0.18) - 2026-09-14
 
 ### ⚙️ Miscellaneous Tasks

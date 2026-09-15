@@ -1,5 +1,6 @@
 [versions]
 kotlin = "2.4.20"
+jvm-toolchain = "25"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }

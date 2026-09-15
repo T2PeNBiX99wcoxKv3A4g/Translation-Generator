@@ -17,7 +17,7 @@ dependencies {
 }
 
 kotlin {
-    jvmToolchain(providers.gradleProperty("jdk_version").get().toInt())
+    jvmToolchain(libs.versions.jvm.toolchain.get().toInt())
 }
 
 tasks.test {

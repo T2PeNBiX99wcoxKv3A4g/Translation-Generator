@@ -1,6 +1,6 @@
 plugins {
-    kotlin("jvm")
-    kotlin("plugin.serialization")
+    alias(libs.plugins.kotlin.jvm)
+    alias(libs.plugins.kotlin.plugin.serialization)
     `java-gradle-plugin`
     `maven-publish`
 }
@@ -13,7 +13,7 @@ repositories {
 
 dependencies {
     implementation(gradleApi())
-    testImplementation(kotlin("test"))
+    testImplementation(libs.kotlin.test)
 }
 
 kotlin {

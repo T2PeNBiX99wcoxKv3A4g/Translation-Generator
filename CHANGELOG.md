@@ -1,5 +1,25 @@
 # Changelog
 
+## [0.0.26](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.25..v0.0.26) - 2026-09-15
+
+### ⚙️ Miscellaneous Tasks
+
+- Migrate jvmToolchain configuration to use version catalog - ([41d8405](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/41d8405cf69d1bcc60b8ce53c9162354231cba9f))
+- Reformat comments in translationGenerator examples in README.md - ([785a243](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/785a24336b3111c6347f06e251f73e99d2fc0e8d))
+- Document translationGenerator configuration in README.md - ([2c3c3bb](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/2c3c3bb372087cb9b8709e8b9d01e45b403341e0))
+
+### Action
+
+- Update version in `gradle.properties` - ([3ea7af9](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/3ea7af9b2dd8c1f5ef315bbed365021ef1c8da6c))
+
+### Build
+
+- Migrate version management to libs.versions.toml - ([95e9351](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/95e935123fd2ccb98af273b7edd9cac8956d9951))
+
+## New Contributors ❤️
+
+* @junie-agent made their first contribution
+
 ## [0.0.25](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.24..v0.0.25) - 2026-09-14
 
 ### ⚙️ Miscellaneous Tasks

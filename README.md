@@ -10,9 +10,9 @@ plugins {
 }
 
 translationGenerator {
-    modId.set("your_mod_id")
+    modId = "your_mod_id"
     // Not the same as the Maven group, this is the package path used in the code.
-    packageName.set("the_package_group_path")
+    packageName = "the_package_group_path"
 }
 ```
 

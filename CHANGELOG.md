@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.30](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.29..v0.0.30) - 2026-09-16
+
+### ⚙️ Miscellaneous Tasks
+
+- Add reusable workflow for rebuilding Maven Pages - ([f7f863c](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/f7f863cd643ec19d0524a24dab776008c136800b))
+
+### Action
+
+- Update version in `gradle.properties` and update `CHANGELOG.md` - ([9f9c02e](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/9f9c02e7d98661eb4026d9cacfa7ee9418716645))
+
+
 ## [0.0.29](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.28..v0.0.29) - 2026-09-16
 
 ### ⚙️ Miscellaneous Tasks

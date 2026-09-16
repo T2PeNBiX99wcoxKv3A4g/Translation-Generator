@@ -9,9 +9,9 @@ on:
       - "maven"
     paths-ignore:
       - "README.md"
-      - '.gitignore'
+      - ".gitignore"
       - "LICENSE*"
-      - '.github/workflows/dependabot-auto-merge.yml'
+      - ".github/workflows/dependabot-auto-merge.yml"
 
 permissions:
   contents: write

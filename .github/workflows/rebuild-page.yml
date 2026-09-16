@@ -1,0 +1,13 @@
+name: Release
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  rebuild:
+    uses: T2PeNBiX99wcoxKv3A4g/Release-Workflows/.github/workflows/jvm_rebuild_maven_pages.yml@main

@@ -23,3 +23,4 @@ jobs:
     uses: T2PeNBiX99wcoxKv3A4g/Release-Workflows/.github/workflows/jvm_release.yml@main
     with:
       publish_maven: true
+      update_readme: true

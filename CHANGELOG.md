@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.28](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.27..v0.0.28) - 2026-09-16
+
+### ⚙️ Miscellaneous Tasks
+
+- Bump translation-generator plugin to v0.0.27 and update release workflow - ([e2b66ca](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/e2b66cad0bee0cbb49a09e5fc2f65331477f7c87))
+
+### Action
+
+- Update version in  and update - ([905c2fe](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/905c2feac190fd360c0a9ec459b720111fbf70e2))
+
+
 ## [0.0.27](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.26..v0.0.27) - 2026-09-16
 
 ### ⚙️ Miscellaneous Tasks

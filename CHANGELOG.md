@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.29](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.28..v0.0.29) - 2026-09-16
+
+### ⚙️ Miscellaneous Tasks
+
+- Standardize path patterns in release workflow paths-ignore section - ([85a972d](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/85a972d318d78750af166deea874d75d6d2e9319))
+
+### Action
+
+- Update version in `gradle.properties` and update `CHANGELOG.md` - ([2a779ea](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/2a779ea1fd13ae1f9b813a6651c0965626a460a9))
+
+
 ## [0.0.28](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.27..v0.0.28) - 2026-09-16
 
 ### ⚙️ Miscellaneous Tasks

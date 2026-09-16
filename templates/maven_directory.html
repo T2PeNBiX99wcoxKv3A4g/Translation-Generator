@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ current_path }} - Maven Repository</title>
+    <script>
+        (function() {
+            const theme = localStorage.getItem('repo-theme');
+            if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.setAttribute('data-theme', 'dark');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+            }
+        })();
+    </script>
+    <link rel="stylesheet" href="{{ root_offset }}style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="title-group">
+                <div class="repo-logo">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <div>
+                    <h1 class="repo-name">Maven Repository</h1>
+                </div>
+            </div>
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-btn" title="Toggle Light/Dark Theme">
+                    <span id="theme-icon">🌙</span>
+                    <span id="theme-text">Dark</span>
+                </button>
+            </div>
+        </header>
+
+        <nav class="breadcrumbs" aria-label="Directory Breadcrumbs">
+            {% for crumb in breadcrumbs %}
+                {% if not loop.first %}<span class="breadcrumb-sep">/</span>{% endif %}
+                {% if loop.last %}
+                    <span class="breadcrumb-item active">{{ crumb.name }}</span>
+                {% else %}
+                    <a href="{{ crumb.href }}" class="breadcrumb-item">{{ crumb.name }}</a>
+                {% endif %}
+            {% endfor %}
+        </nav>
+
+        {% if maven_snippet %}
+        <section class="snippet-card">
+            <div class="snippet-title">
+                <span>Dependency Coordinate</span>
+                <div class="snippet-tabs">
+                    <button class="snippet-tab active" data-type="maven" onclick="switchSnippet('maven', this)">Maven</button>
+                    <button class="snippet-tab" data-type="gradle" onclick="switchSnippet('gradle', this)">Gradle (Groovy)</button>
+                    <button class="snippet-tab" data-type="kotlin" onclick="switchSnippet('kotlin', this)">Gradle (Kotlin)</button>
+                </div>
+            </div>
+            <div class="snippet-code-wrapper">
+                <div id="snippet-maven" class="snippet-code" style="display: block;">{{ maven_snippet.maven }}</div>
+                <div id="snippet-gradle" class="snippet-code" style="display: none;">{{ maven_snippet.gradle }}</div>
+                <div id="snippet-kotlin" class="snippet-code" style="display: none;">{{ maven_snippet.kotlin }}</div>
+                <button class="copy-btn" onclick="copySnippet()" title="Copy snippet to clipboard">Copy</button>
+            </div>
+        </section>
+        {% endif %}
+
+        <div class="toolbar">
+            <div class="search-box">
+                <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+                <input type="text" id="filter-input" class="search-input" placeholder="Filter files in this directory..." autocomplete="off">
+            </div>
+            <div class="stats-badge">
+                <span>{{ total_dirs }} directories, {{ total_files }} files</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="col-name">Name</th>
+                            <th class="col-size">Size</th>
+                            <th class="col-date">Last Modified (UTC)</th>
+                        </tr>
+                    </thead>
+                    <tbody id="files-tbody">
+                        {% if parent_href %}
+                        <tr class="parent-row">
+                            <td class="name-col" colspan="3">
+                                <a href="{{ parent_href }}" class="parent-link">
+                                    <span>📁</span>
+                                    <span>.. (Parent Directory)</span>
+                                </a>
+                            </td>
+                        </tr>
+                        {% endif %}
+
+                        {% for dir in directories %}
+                        <tr class="entry-row" data-name="{{ dir.name|lower }}">
+                            <td class="name-col">
+                                <a href="{{ dir.href }}" class="entry-link">
+                                    <span class="entry-icon">📁</span>
+                                    <span>{{ dir.display_name }}</span>
+                                    <span class="badge badge-folder">DIR</span>
+                                </a>
+                            </td>
+                            <td class="size-col">-</td>
+                            <td class="date-col">{{ dir.last_modified }}</td>
+                        </tr>
+                        {% endfor %}
+
+                        {% for file in files %}
+                        <tr class="entry-row" data-name="{{ file.name|lower }}">
+                            <td class="name-col">
+                                <a href="{{ file.href }}" class="entry-link">
+                                    <span class="entry-icon">{{ file.icon_emoji }}</span>
+                                    <span>{{ file.display_name }}</span>
+                                    {% if file.badge %}
+                                    <span class="badge {{ file.badge_class }}">{{ file.badge }}</span>
+                                    {% endif %}
+                                </a>
+                            </td>
+                            <td class="size-col">{{ file.size_formatted }}</td>
+                            <td class="date-col">{{ file.last_modified }}</td>
+                        </tr>
+                        {% endfor %}
+
+                        {% if total_dirs == 0 and total_files == 0 and not parent_href %}
+                        <tr>
+                            <td colspan="3" class="empty-row">No files found in this directory.</td>
+                        </tr>
+                        {% endif %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            <p>Generated by Maven Static Repository Generator &bull; {{ current_time }}</p>
+        </footer>
+    </div>
+
+    <script src="{{ root_offset }}script.js"></script>
+</body>
+</html>

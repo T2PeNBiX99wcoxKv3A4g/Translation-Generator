@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.0.27](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.26..v0.0.27) - 2026-09-16
+
+### ⚙️ Miscellaneous Tasks
+
+- Replace custom release workflow steps with reusable JVM release action - ([aa0560e](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/aa0560ecd9bb93dc72afae493b4e5a5aa7be9488))
+- Replace custom steps in dependabot-auto-merge workflow with reusable action - ([1d09345](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/1d09345517862e575b9701784b09aacfe59707ff))
+- Update translationGenerator config examples in README.md to use assignment syntax - ([2c97455](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/2c974556be4d09b088e139532dac7014b37794ec))
+
+### Action
+
+- Update version in `gradle.properties` - ([069976c](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/069976c940fadf7a1a4752dcee630b9c5c56b9fa))
+
+
 ## [0.0.26](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.25..v0.0.26) - 2026-09-15
 
 ### ⚙️ Miscellaneous Tasks

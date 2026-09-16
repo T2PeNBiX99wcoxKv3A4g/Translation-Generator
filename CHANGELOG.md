@@ -1,5 +1,16 @@
 # Changelog
 
+## [0.0.31](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.30..v0.0.31) - 2026-09-16
+
+### ⚙️ Miscellaneous Tasks
+
+- Rename workflow to "Rebuild Page" for clarity - ([a03d361](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/a03d361666e0177e1da195877958e6223e5d05a7))
+
+### Action
+
+- Update version in `gradle.properties` and update `CHANGELOG.md` - ([986ba71](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/commit/986ba71fbe0bb0d100c03c4533d45a84b44c1744))
+
+
 ## [0.0.30](https://github.com/T2PeNBiX99wcoxKv3A4g/Translation-Generator/compare/v0.0.29..v0.0.30) - 2026-09-16
 
 ### ⚙️ Miscellaneous Tasks
